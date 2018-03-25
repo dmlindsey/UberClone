@@ -12,6 +12,11 @@
 		11BA3DA9204C61780020B9C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BA3DA7204C61780020B9C0 /* Main.storyboard */; };
 		11BA3DAB204C61780020B9C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BA3DAA204C61780020B9C0 /* Assets.xcassets */; };
 		11BA3DAE204C61780020B9C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BA3DAC204C61780020B9C0 /* LaunchScreen.storyboard */; };
+		11BA3DB6204C62720020B9C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11BA3DB5204C62710020B9C0 /* GoogleService-Info.plist */; };
+		11BA3DB8204DEB270020B9C0 /* RiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA3DB7204DEB270020B9C0 /* RiderViewController.swift */; };
+		11BA3DBA204F21480020B9C0 /* DriverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA3DB9204F21480020B9C0 /* DriverTableViewController.swift */; };
+		11BA3DBC204F414C0020B9C0 /* AcceptRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA3DBB204F414C0020B9C0 /* AcceptRequestViewController.swift */; };
+		E2F1FA51E4EF2E95EC534D4B /* Pods_UberClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE3B3B22A5DFE378873501C /* Pods_UberClone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,13 @@
 		11BA3DAA204C61780020B9C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11BA3DAD204C61780020B9C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11BA3DAF204C61780020B9C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BA3DB5204C62710020B9C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		11BA3DB7204DEB270020B9C0 /* RiderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderViewController.swift; sourceTree = "<group>"; };
+		11BA3DB9204F21480020B9C0 /* DriverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewController.swift; sourceTree = "<group>"; };
+		11BA3DBB204F414C0020B9C0 /* AcceptRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptRequestViewController.swift; sourceTree = "<group>"; };
+		8FC16100DAD49ECDE78FC923 /* Pods-UberClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UberClone/Pods-UberClone.debug.xcconfig"; sourceTree = "<group>"; };
+		AFF2CDD9068E648FBCAFD66E /* Pods-UberClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-UberClone/Pods-UberClone.release.xcconfig"; sourceTree = "<group>"; };
+		CFE3B3B22A5DFE378873501C /* Pods_UberClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F1FA51E4EF2E95EC534D4B /* Pods_UberClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 			children = (
 				11BA3DA2204C61780020B9C0 /* UberClone */,
 				11BA3DA1204C61780020B9C0 /* Products */,
+				C0DF2625FC7085CC8758A091 /* Pods */,
+				7CD715C869C8A813A0FAE71E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +71,33 @@
 			children = (
 				11BA3DA3204C61780020B9C0 /* AppDelegate.swift */,
 				11BA3DA5204C61780020B9C0 /* ViewController.swift */,
+				11BA3DB7204DEB270020B9C0 /* RiderViewController.swift */,
+				11BA3DB9204F21480020B9C0 /* DriverTableViewController.swift */,
+				11BA3DBB204F414C0020B9C0 /* AcceptRequestViewController.swift */,
 				11BA3DA7204C61780020B9C0 /* Main.storyboard */,
 				11BA3DAA204C61780020B9C0 /* Assets.xcassets */,
 				11BA3DAC204C61780020B9C0 /* LaunchScreen.storyboard */,
 				11BA3DAF204C61780020B9C0 /* Info.plist */,
+				11BA3DB5204C62710020B9C0 /* GoogleService-Info.plist */,
 			);
 			path = UberClone;
+			sourceTree = "<group>";
+		};
+		7CD715C869C8A813A0FAE71E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFE3B3B22A5DFE378873501C /* Pods_UberClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0DF2625FC7085CC8758A091 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FC16100DAD49ECDE78FC923 /* Pods-UberClone.debug.xcconfig */,
+				AFF2CDD9068E648FBCAFD66E /* Pods-UberClone.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11BA3DB2204C61780020B9C0 /* Build configuration list for PBXNativeTarget "UberClone" */;
 			buildPhases = (
+				4FD9574F5D46AAB92F9B2DCB /* [CP] Check Pods Manifest.lock */,
 				11BA3D9C204C61770020B9C0 /* Sources */,
 				11BA3D9D204C61770020B9C0 /* Frameworks */,
 				11BA3D9E204C61770020B9C0 /* Resources */,
+				0A481A0FA157C2A13BA6A920 /* [CP] Embed Pods Frameworks */,
+				8E5830BED691AC398868F956 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +164,112 @@
 			files = (
 				11BA3DAE204C61780020B9C0 /* LaunchScreen.storyboard in Resources */,
 				11BA3DAB204C61780020B9C0 /* Assets.xcassets in Resources */,
+				11BA3DB6204C62720020B9C0 /* GoogleService-Info.plist in Resources */,
 				11BA3DA9204C61780020B9C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A481A0FA157C2A13BA6A920 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UberClone/Pods-UberClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FD9574F5D46AAB92F9B2DCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UberClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E5830BED691AC398868F956 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UberClone/Pods-UberClone-resources.sh",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email@2x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email@3x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility@2x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility@3x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off@2x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off@3x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/en.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRAuthPickerViewController~ipad.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRAuthPickerViewController~iphone.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRAuthUITableViewCell~ipad.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRAuthUITableViewCell~iphone.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIREmailEntryViewController~ipad.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIREmailEntryViewController~iphone.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordRecoveryViewController~ipad.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordRecoveryViewController~iphone.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordSignInViewController~ipad.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordSignInViewController~iphone.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordSignUpViewController~ipad.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordSignUpViewController~iphone.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordVerificationViewController~ipad.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordVerificationViewController~iphone.nib",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_email.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_email@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_email@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility_off.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility_off@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility_off@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIRAuthPickerViewController~ipad.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIRAuthPickerViewController~iphone.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIRAuthUITableViewCell~ipad.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIRAuthUITableViewCell~iphone.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIREmailEntryViewController~ipad.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIREmailEntryViewController~iphone.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIRPasswordRecoveryViewController~ipad.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIRPasswordRecoveryViewController~iphone.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIRPasswordSignInViewController~ipad.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIRPasswordSignInViewController~iphone.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIRPasswordSignUpViewController~ipad.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIRPasswordSignUpViewController~iphone.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIRPasswordVerificationViewController~ipad.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIRPasswordVerificationViewController~iphone.nib",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UberClone/Pods-UberClone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11BA3D9C204C61770020B9C0 /* Sources */ = {
@@ -137,7 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				11BA3DA6204C61780020B9C0 /* ViewController.swift in Sources */,
+				11BA3DBA204F21480020B9C0 /* DriverTableViewController.swift in Sources */,
+				11BA3DB8204DEB270020B9C0 /* RiderViewController.swift in Sources */,
 				11BA3DA4204C61780020B9C0 /* AppDelegate.swift in Sources */,
+				11BA3DBC204F414C0020B9C0 /* AcceptRequestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +415,7 @@
 		};
 		11BA3DB3204C61780020B9C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC16100DAD49ECDE78FC923 /* Pods-UberClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +431,7 @@
 		};
 		11BA3DB4204C61780020B9C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF2CDD9068E648FBCAFD66E /* Pods-UberClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
