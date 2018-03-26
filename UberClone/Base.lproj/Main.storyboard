@@ -142,6 +142,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02Y-y5-7oG" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1Tt-E8-6Sm"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -149,6 +156,9 @@
                             <constraint firstItem="gmP-j1-FKd" firstAttribute="leading" secondItem="jLj-PK-OgK" secondAttribute="leading" constant="20" id="U7C-TK-h4U"/>
                             <constraint firstItem="0Wb-ow-86H" firstAttribute="top" secondItem="gmP-j1-FKd" secondAttribute="bottom" constant="8" id="eHc-Fu-KfF"/>
                             <constraint firstItem="0Wb-ow-86H" firstAttribute="centerX" secondItem="Ggb-mp-SUx" secondAttribute="centerX" id="egt-Gj-gKz"/>
+                            <constraint firstItem="02Y-y5-7oG" firstAttribute="leading" secondItem="jLj-PK-OgK" secondAttribute="leading" id="h1b-Ab-IeC"/>
+                            <constraint firstItem="02Y-y5-7oG" firstAttribute="bottom" secondItem="jLj-PK-OgK" secondAttribute="bottom" id="jfo-tD-4GS"/>
+                            <constraint firstItem="jLj-PK-OgK" firstAttribute="trailing" secondItem="02Y-y5-7oG" secondAttribute="trailing" id="jqV-XO-4ie"/>
                             <constraint firstItem="jLj-PK-OgK" firstAttribute="trailing" secondItem="gmP-j1-FKd" secondAttribute="trailing" constant="20" id="p96-rc-34C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jLj-PK-OgK"/>
@@ -161,6 +171,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="bannerView" destination="02Y-y5-7oG" id="ytR-7O-aLv"/>
                         <outlet property="callAnUberButton" destination="wRZ-CH-vgi" id="yUK-Mr-THs"/>
                         <outlet property="map" destination="gmP-j1-FKd" id="dgH-Cm-4Qe"/>
                     </connections>
